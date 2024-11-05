@@ -65,7 +65,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int count = 3;  // 选择的假名个数
-        int totalCount = 20;
+        int totalCount = 25;
 
         while (true) {
             // 创建存储随机选择的假名和对应罗马音的数组
@@ -110,10 +110,10 @@ public class Main {
             int correctCount = 0;
             for (int i = 0; i < count; i++) {
                 if (userInputs[i].equals(correctRomaji[i])) {
-                    System.out.println("平假名 " + selectedHiragana[i] + ": 正确！");
+                    System.out.println("平假名 " + selectedHiragana[i] + ",片假名 " + selectedKatakana[i] + ": 正确！");
                     correctCount++;
                 } else {
-                    System.out.println("平假名 " + selectedHiragana[i] + ": 错误！正确的罗马音是: " + correctRomaji[i]);
+                    System.out.println("平假名 " + selectedHiragana[i] + ",片假名 " + selectedKatakana[i] + ": 错误！正确的罗马音是: " + correctRomaji[i]);
                 }
 
                 // 输出对应的汉字
